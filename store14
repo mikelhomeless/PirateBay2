@@ -566,7 +566,7 @@ $defaultclassifyarray="buildapc";
 );
 
 
-%categoryarrayattriname=("buildapc" => {"processors" => [],
+%categoryarrayattriname=("buildapc" => {"processors" => ["$lang{'Chipset'}|8|&nbsp;&nbsp", "$lang{'Number of Cores:'}|8|<br><br>"],
                                        "graphicscards" => [],
                                        "motherboards" => [],
                                        "powersupplyunits"=>[],
