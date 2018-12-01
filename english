@@ -491,9 +491,9 @@ You can have <numpicture>(pictures.)#You can have <numpicture>(pictures.)#
 (You can have) <numpicture>pictures.#(You can have) <numpicture>pictures.#
 You are at this limit now.#You are at this limit now.#
 Go Back#Go Back#
-If you would like to upload more pictures for your item you can do it. There is a
-cost for doing this. Your picture must be in jpg(jpeg) format and its size cannot exceeds
-global<picturesize> bytes(Please contact us directly if you need to upload larger size pictures). If your
+If you would like to upload more pictures for your item you can do it. There is a 
+cost for doing this. Your picture must be in jpg(jpeg) format and its size cannot exceeds 
+global<picturesize> bytes(Please contact us directly if you need to upload larger size pictures). If your 
 credit is not sufficient please enter the credit card company by clicking the follow button to pay for uploading the pictures.#credit is not sufficient please enter the credit card company by clicking the follow button to pay for uploading the pictures.#
 The number of pictures you would like to upload:#The number of pictures you would like to upload:#
 Picture post duration:#Picture post duration:#
@@ -1130,44 +1130,210 @@ An email has been sent to us. Please wait for response.#An email has been sent t
 
 sub customize {
 $langindexkey=
-"Computer Accessories#Computer Accessories#
-Keyboards#Keyboards#
-Mice#Mice#
-Monitors#Monitors#
-Mouse Pads#Mouse Pads#
-Dongles#Dongles#
-Features:#Features:#
-Resolution:#Resolution:#
-Refresh Rate:#Refresh Rate:#
-Supported Platforms:#Supported Platforms:#
-Kansas City#Kansas City#
+"Kansas City#Kansas City#
 Size:#Size:#
 Price:#Price:#
+Hot Food#Hot Food#
+Hot Dogs#Hot Dogs#
+Corn Dogs#Corn Dogs#
+Soft Dogs#Soft Dogs#
+Big Dogs#Big Dogs#
+Just Plain Ol Dogs#Just Plain Ol Dogs#
 Build A PC#Build A PC#
 Processors#Processors#
-Chipset#Chipset#
-Number of Cores#Number of Cores#
-Graphics Cards#Graphics Cards#
+Chipset:#Chipset:#
+Number of Cores:#Number of Cores:#
+Graphics Cards# Graphics Cards#
+Memory:#Memory:#
+Maximum Memory Supported:#Maximum Memory Supported:#
 Hard Drives#Hard Drives#
+Type:#Type:#
 Motherboards#Motherboards#
 Power Supply Units#Power Supply Units#
+Wattage:#Wattage:#
 Cases Cords & Other Parts#Cases Cords & Other Parts#
+On Sale:#On Sale:#
 Computers#Computers#
 Desktops#Desktops#
+Manufacturer:#Manufacturer:#
 Laptops#Laptops#
 Notebooks#Notebooks#
 Gaming Desktops#Gaming Desktops#
 Gaming Laptops#Gaming Laptops#
 Gaming Consoles & Games#Gaming Consoles & Games#
 Xbox One# Xbox One#
+Xbox Games#Xbox Games#
 PS4#PS4#
+Playstation Games#Playstation Games#
 Nintendo Switch#Nintendo Switch#
 Nintendo Wii#Nintendo Wii#
+Nintendo Games#Nintendo Games#
+Game Of The Year:#Game Of The Year:#
+Accessory:#Accessory:#
 Stereo Equipment#Stero Equipment#
 Home Audio#Home Audio#
 Surround Sound#Surround Sound#
 Car Stereo Systems#Car Stereo Systems#
+Dolby:#Dolby:#
 Vinyl#Vinyl#
+Decibels:#Decibels:#
+Genre:#Genre:#
+Bath#Bath#
+Building Materials#Building Materials#
+Decor#Decor#
+Door & Windows#Door & Windows#
+Electrical#Electrical#
+Flooring#Flooring#
+Heating & Cooling#Heating & Cooling#
+Kitchen#Kitchen#
+Lighting & Ceiling Fans#Lighting & Ceiling Fans#
+Lumber & Composites#Lumber & Composites#
+Outdoors#Outdoors#
+Paint#Paint#
+Plumbing#Plumbing#
+Storage & Organization#Storage & Organization#
+Tools#Tools#
+Appliances Parts & Accessories#Appliances Parts & Accessories#
+Dishwashers#Dishwashers#
+Freezers#Freezers#
+Garbage Disposals#Garbage Disposals#
+Microwaves#Microwaves#
+Range Hoods#Range Hoods#
+Ranges#Ranges#
+Small Appliances#Small Appliances#
+Vacuums#Vacuums#
+Ovens#Ovens#
+Washers & Dryers#Washers & Dryers#
+Water Coolers#Water Coolers#
+Bathroom Cabinets#Bathroom Cabinets#
+Bathroom Fans#Bathroom Fans#
+Faucets#Faucets#
+Mirrors#Mirrors#
+Sinks#Sinks#
+Bathtubs#Bathtubs#
+Showers & Shower Accessories#Showers & Shower Accessories#
+Toilets & Toilet Seats#Toilets & Toilet Seats#
+Ceilings#Ceilings#
+Concrete Cement & Masonry#Concrete Cement & Masonry#
+Decking#Decking#
+Drywall#Drywall#
+Fireplace Accessories#Fireplace Accessories#
+Glass & Acrylic#Glass & Acrylic#
+Insulation & Accessories#Insulation & Accessories#
+Ladders#Ladders#
+Lumber#Lumber#
+Moulding & Wallpanels#Moulding & Wallpanels#
+Roofing & Gutters#Roofing & Gutters#
+Siding & Stone Veneer#Siding & Stone Veneer#
+Stairs & Ailings#Stairs & Ailings#
+Ventilation#Ventilation#
+Awnings & Accessories#Awnings & Accessories#
+Doors#Doors#
+Exterior Shutters & Accessories#Exterior Shutters & Accessories#
+Garage Doors & Openers#Garage Doors & Openers#
+Windows#Windows#
+Batteries#Batteries#
+Cable & Wire Connectors#Cable & Wire Connectors#
+Circuit Breakers#Circuit Breakers#
+Conduit & Conduit Fittings#Conduit & Conduit Fittings#
+Dimmers & Switches#Dimmers & Switches#
+Door Bells#Door Bells#
+Electrical Boxes & Covers#Electrical Boxes & Covers#
+Electrical Outles & Adapters#Electrical Outles & Adapters#
+Electrical Tools#Electrical Tools#
+Extension Cords#Extension Cords#
+Generators#Generators#
+Light Sockets#Light Sockets#
+Wall Plates#Wall Plates#
+Carpet#Carpet#
+Floor Moulding#Floor Moulding#
+Flooring Tools#Flooring Tools#
+Hardwood Flooring#Hardwood Flooring#
+Rugs#Rugs#
+Tile & Stone#Tile & Stone#
+Vinyl Flooring#Vinyl Flooring#
+Air Conditioners#Air Conditioners#
+Air Filters#Air Filters#
+Air Purifiers#Air Purifiers#
+Attic Ventilation#Attic Ventilation#
+Fireplaces#Fireplaces#
+Heaters#Heaters#
+Humidifiers & Dehumidifiers#Humidifiers & Dehumidifiers#
+Thermostats#Thermostats#
+Kitchen Faucets#Kitchen Faucets#
+Kitchen Sinks#Kitchen Sinks#
+Kitchen Cabinets#Kitchen Cabinets#
+Kitchen Countertops#Kitchen Countertops#
+Kitchen Wall Tiles#Kitchen Wall Tiles#
+Bathroom Lighting#Bathroom Lighting#
+Ceiling Fans#Ceiling Fans#
+Ceiling Lights#Ceiling Lights#
+Chandeliers & Pendant Lighting#Chandeliers & Pendant Lighting#
+Kitchen Lighting#Kitchen Lighting#
+Lamps & Lamp Shades#Lamps & Lamp Shades#
+Landscape Lighting#Landscape Lighting#
+Lighting Bulbs#Lighting Bulbs#
+Timers#Timers#
+Boards#Boards#
+Decking#Decking#
+Fencing#Fencing#
+Paneling#Paneling#
+Plywood & Sheathing#Plywood & Sheathing#
+Shims & Wood Shingles#Shims & Wood Shingles#
+Timber#Timber#
+Animal & Pet Care#Animal & Pet Care#
+Bird Care#Bird Care#
+Grills#Grills#
+Hot Tubs#Hot Tubs#
+Patio Furniture#Patio Furniture#
+Play Sets & Swing Sets#Play Sets & Swing Sets#
+Pools#Pools#
+Caulking#Caulking#
+Cleaners#Cleaners#
+Drop Cloths & Sheeting#Drop Cloths & Sheeting#
+Glues & Tapes#Glues & Tapes#
+Paint & Primer#Paint & Primer#
+Paint Brushes, Rollers & Kits#Paint Brushes, Rollers & Kits#
+Paint Cleanup#Paint Cleanup#
+Paint Sprayers#Paint Sprayers#
+Patching#Patching#
+Sanding#Sanding#
+Scrapers, Blades & Tools#Scrapers, Blades & Tools#
+Stains & Sealers#Stains & Sealers#
+Thinners & Removers#Thinners & Removers#
+Augers, Plungers, Drain Openers#Augers, Plungers, Drain Openers#
+Laudry Tubs & Faucets#Laudry Tubs & Faucets#
+Pipes#Pipes#
+Laudry Tubs & Faucets#Laudry Tubs & Faucets#
+Plumbing Tools#Plumbing Tools#
+Pumps & Tanks#Pumps & Tanks#
+Valves#Valves#
+Water Filtration & Water Softners#Water Filtration & Water Softners#
+Water Heaters#Water Heaters#
+Closet Storage#Closet Storage#
+Folding Tables & Chairs#Folding Tables & Chairs#
+Garage Storage#Garage Storage#
+Hooks & Racks#Hooks & Racks#
+Laudry Storage#Laudry Storage#
+Moving Boxes & Supplies#Moving Boxes & Supplies#
+Office Storage#Office Storage#
+Shelves#Shelves#
+Storage Totes & Baskets#Storage Totes & Baskets#
+Air Tools & Compressors#Air Tools & Compressors#
+Drill & Drill Bits#Drill & Drill Bits#
+Grease Guns#Grease Guns#
+Grinders & Polishers#Grinders & Polishers#
+Hand Tools#Hand Tools#
+Joiners & Planers#Joiners & Planers#
+Measuring Tools#Measuring Tools#
+Nailers & Staplers#Nailers & Staplers#
+Power Saws & Saw Blades#Power Saws & Saw Blades#
+Presses & Lathes#Presses & Lathes#
+Rotary Tools & Oscillating Tools#Rotary Tools & Oscillating Tools#
+Routers & Router Bits#Routers & Router Bits#
+Sanders & Sand Paper#Sanders & Sand Paper#
+Tool Batteries & Chargers#Tool Batteries & Chargers#
+Welding & Cutting#Welding & Cutting#
 Production Place:#Production Place:#
 Production Date:#Production Date:#
 Expiration Date:#Expiration Date:#
@@ -1184,5 +1350,5 @@ Nonexpire#Nonexpire#
 ";
 
 }
-
+ 
 1; #return true

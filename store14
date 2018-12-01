@@ -61,18 +61,18 @@ sub Country_Initialize
 local (*in) = shift if @_;    # CGI input
 
 
-#@cities=("albuquerque", "altanta", "austin", "baltimore", "boston", "charlotte", "chicago", "cincinnati",
-#"cleveland", "columbus", "dallasftworth", "denverboulder", "detroit", "houston",
+#@cities=("albuquerque", "altanta", "austin", "baltimore", "boston", "charlotte", "chicago", "cincinnati", 
+#"cleveland", "columbus", "dallasftworth", "denverboulder", "detroit", "houston", 
 #"indianapolis", "kc", "lasvegas", "littlerock", "losangeles", "memphis", "miami",
-#"milwaukee", "minneapolisstpaul", "montreal", "nashville", "newhaven", "newyork", "oklahomacity", #"orlando",
-#"ottawa", "philadelphia", "phoenix", "pittsburgh", "portland", "puertorico", "raleighdurhamchapelhill", #"renotahoe", "rochester", "sacramento", "saltlakecity", "sanantonio", "sandiego", "sanfrancisco", "sanjose", #"santafe", "seattle", "spokane", "stlouis", "tampa", "toronto", "tucson",
+#"milwaukee", "minneapolisstpaul", "montreal", "nashville", "newhaven", "newyork", "oklahomacity", #"orlando", 
+#"ottawa", "philadelphia", "phoenix", "pittsburgh", "portland", "puertorico", "raleighdurhamchapelhill", #"renotahoe", "rochester", "sacramento", "saltlakecity", "sanantonio", "sandiego", "sanfrancisco", "sanjose", #"santafe", "seattle", "spokane", "stlouis", "tampa", "toronto", "tucson", 
 #"vancouver", "washingtondc", "wilmington");
 
 @cities=("kc");
 
-#@cityname=("Albuquerque", "Atlanta", "Austin", "Baltimore", "Boston", "Charlotte", "Chicago", #"Cincinnati", "Cleveland", "Columbus", "Dallas/Ft. Worth", "Denver/Boulder", "Detroit", "Houston",
+#@cityname=("Albuquerque", "Atlanta", "Austin", "Baltimore", "Boston", "Charlotte", "Chicago", #"Cincinnati", "Cleveland", "Columbus", "Dallas/Ft. Worth", "Denver/Boulder", "Detroit", "Houston", 
 #"Indianapolis", "Kansas City", "Las Vegas", "Little Rock", "Los Angeles", "Memphis", "Miami",
-#"Milwaukee", "Minneapolis/St Paul", "Montreal", "Nashville", "New Haven", "New York", "Oklahoma #City", "Orlando", "Ottawa", "Philadelphia", "Phoenix", "Pittsburgh", "Portland", "Puerto Rico", "Raleigh-#Durham-Chapel Hill", "Reno/Tahoe", "Rochester", "Sacramento", "Salt Lake City", "San Antonio", "San #Diego", "San Francisco", "San Jose", "Santa Fe", "Seattle", "Spokane", "St. Louis", "Tampa", "Toronto", #"Tucson",
+#"Milwaukee", "Minneapolis/St Paul", "Montreal", "Nashville", "New Haven", "New York", "Oklahoma #City", "Orlando", "Ottawa", "Philadelphia", "Phoenix", "Pittsburgh", "Portland", "Puerto Rico", "Raleigh-#Durham-Chapel Hill", "Reno/Tahoe", "Rochester", "Sacramento", "Salt Lake City", "San Antonio", "San #Diego", "San Francisco", "San Jose", "Santa Fe", "Seattle", "Spokane", "St. Louis", "Tampa", "Toronto", #"Tucson", 
 #"Vancouver", "Washington DC", "Wilmington");
 
 @cityname=("$lang{'Kansas City'}");
@@ -80,75 +80,75 @@ local (*in) = shift if @_;    # CGI input
 ######End Auto Work Section, Start Common Section
 
 @provincesstates=(
-                   "${'North America'}",
+                   "$lang{'North America'}", 
                    "$lang{'Washington DC'}",
                    "$lang{'Alberta'}",
-                   "$lang{'Alabama'}",
+                   "$lang{'Alabama'}", 
                    "$lang{'Alaska'}",
-                   "$lang{'Arkansas'}",
-                   "$lang{'Arizona'}",
-                   "$lang{'British Columbia'}",
-                   "$lang{'California'}",
-                   "$lang{'Colorado'}",
+                   "$lang{'Arkansas'}", 
+                   "$lang{'Arizona'}", 
+                   "$lang{'British Columbia'}", 
+                   "$lang{'California'}", 
+                   "$lang{'Colorado'}", 
                    "$lang{'Connecticut'}",
                    "$lang{'Delaware'}",
-                   "$lang{'Florida'}",
-                   "$lang{'Georgia'}",
-                   "$lang{'Hawaii'}",
-                   "$lang{'Iowa'}",
-                   "$lang{'Idaho'}",
-                   "$lang{'Illinois'}",
-                   "$lang{'Indiana'}",
-                   "$lang{'Kansas'}",
-                   "$lang{'Kentucky'}",
-                   "$lang{'Louisiana'}",
-                   "$lang{'Massachusetts'}",
-                   "$lang{'Manitoba'}",
-                   "$lang{'Maryland'}",
+                   "$lang{'Florida'}", 
+                   "$lang{'Georgia'}", 
+                   "$lang{'Hawaii'}", 
+                   "$lang{'Iowa'}", 
+                   "$lang{'Idaho'}", 
+                   "$lang{'Illinois'}", 
+                   "$lang{'Indiana'}", 
+                   "$lang{'Kansas'}",  
+                   "$lang{'Kentucky'}", 
+                   "$lang{'Louisiana'}", 
+                   "$lang{'Massachusetts'}", 
+                   "$lang{'Manitoba'}", 
+                   "$lang{'Maryland'}", 
                    "$lang{'Maine'}",
-                   "$lang{'Michigan'}",
-                   "$lang{'Minnesota'}",
-                   "$lang{'Missouri'}",
-                   "$lang{'Mississippi'}",
-                   "$lang{'Montana'}",
+                   "$lang{'Michigan'}", 
+                   "$lang{'Minnesota'}", 
+                   "$lang{'Missouri'}", 
+                   "$lang{'Mississippi'}", 
+                   "$lang{'Montana'}", 
                    "$lang{'New Brunswick'}",
-                   "$lang{'North Carolina'}",
-                   "$lang{'North Dakota'}",
-                   "$lang{'Nebraska'}",
-                   "$lang{'Newfoundland'}",
+                   "$lang{'North Carolina'}", 
+                   "$lang{'North Dakota'}", 
+                   "$lang{'Nebraska'}",  
+                   "$lang{'Newfoundland'}", 
                    "$lang{'New Hampshire'}",
-                   "$lang{'New Jersy'}",
-                   "$lang{'New Mexico'}",
-                   "$lang{'Northwest Territories'}",
+                   "$lang{'New Jersy'}", 
+                   "$lang{'New Mexico'}", 
+                   "$lang{'Northwest Territories'}", 
                    "$lang{'Nova Scotia'}",
-                   "$lang{'Nevada'}",
-                   "$lang{'New York'}",
-                   "$lang{'Ohio'}",
-                   "$lang{'Oklahoma'}",
-                   "$lang{'Ontario'}",
-                   "$lang{'Oregan'}",
-                   "$lang{'Pennsylvania'}",
-                   "$lang{'Prince Edward Island'}",
-                   "$lang{'Quebec'}",
-                   "$lang{'Rhode Island'}",
-                   "$lang{'South Carolina'}",
-                   "$lang{'South Dakota'}",
+                   "$lang{'Nevada'}", 
+                   "$lang{'New York'}", 
+                   "$lang{'Ohio'}", 
+                   "$lang{'Oklahoma'}",  
+                   "$lang{'Ontario'}", 
+                   "$lang{'Oregan'}", 
+                   "$lang{'Pennsylvania'}",  
+                   "$lang{'Prince Edward Island'}", 
+                   "$lang{'Quebec'}", 
+                   "$lang{'Rhode Island'}", 
+                   "$lang{'South Carolina'}", 
+                   "$lang{'South Dakota'}", 
                    "$lang{'Saskatchewan'}",
-                   "$lang{'Tennessee'}",
-                   "$lang{'Texas'}",
-                   "$lang{'Utah'}",
-                   "$lang{'Virginia'}",
-                   "$lang{'Vermont'}",
+                   "$lang{'Tennessee'}", 
+                   "$lang{'Texas'}", 
+                   "$lang{'Utah'}", 
+                   "$lang{'Virginia'}", 
+                   "$lang{'Vermont'}", 
                    "$lang{'Washington'}",
                    "$lang{'Wisconsin'}",
                    "$lang{'West Virginia'}",
                    "$lang{'Wyoming'}",
-                   "$lang{'Yukon'}",
+                   "$lang{'Yukon'}", 
                    "$lang{'Other'}",
 
 );
 
-@provincestatearr =("NA",
+@provincestatearr =("NA", 
                    "Washington DC",
                    "AB",                          #  <!-- Alberta -->
                    "AL",                          #  <!-- Alabama -->
@@ -167,7 +167,7 @@ local (*in) = shift if @_;    # CGI input
                    "ID",                            #   <!-- Idaho -->
                    "IL",                             #   <!-- Illinois -->
                    "IN",                             # <!-- Indiana -->
-                   "KS",                            # <!-- Kansas -->
+                   "KS",                            # <!-- Kansas --> 
                    "KY",                           # <!-- Kentucky -->
                    "LA",                            #  <!-- Louisiana -->
                    "MA",                           #  <!-- Massachusetts -->
@@ -182,7 +182,7 @@ local (*in) = shift if @_;    # CGI input
                     "NB",                          #   <!-- New Brunswick -->
                     "NC",                          #   <!-- North Carolina -->
                     "ND",                          #  <!-- North Dakota -->
-                    "NE",                          #  <!-- Nebraska -->
+                    "NE",                          #  <!-- Nebraska --> 
                     "NF",                          #  <!-- Newfoundland -->
                     "NH",                         # <!-- New Hampshire -->
                     "NJ",                          #   <!-- New Jersy -->
@@ -192,14 +192,14 @@ local (*in) = shift if @_;    # CGI input
                     "NV",                         #  <!-- Nevada -->
                     "NY",                         #  <!-- New York -->
                     "OH",                         #  <!-- Ohio -->
-                    "OK",                         # <!-- Oklahoma -->
+                    "OK",                         # <!-- Oklahoma --> 
                     "ON",                         # <!-- Ontario -->
                     "OR",                         #  <!-- Oregan -->
-                    "PA",                         #   <!-- Pennsylvania -->
+                    "PA",                         #   <!-- Pennsylvania --> 
                     "PE",                          #  <!-- Prince Edward Island -->
                     "PQ",                         #   <!-- Quebec -->
                     "RI",                          #   <!-- Rhode Island -->
-                    "SC",                         #   <!-- South Carolina -->
+                    "SC",                         #   <!-- South Carolina --> 
                     "SD",                         #   <!-- South Dakota -->
                     "SK",                         #   <!-- Saskatchewan -->
                     "TN",                         #   <!-- Tennessee -->
@@ -217,196 +217,480 @@ local (*in) = shift if @_;    # CGI input
 
 
 
-@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}",
-"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}");
+@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}", 
+"$lang{'Stereo Equipment'}", "$lang{'Electrical'}",  
+"$lang{'Flooring'}",  "$lang{'Heating & Cooling'}", "$lang{'Hot Food'}","$lang{'Kitchen'}", "$lang{'Lighting & Ceiling Fans'}", "$lang{'Lumber & Composites'}", "$lang{'Outdoors'}", "$lang{'Paint'}", "$lang{'Plumbing'}", 
+"$lang{'Storage & Organization'}", "$lang{'Tools'}");
 
 
-@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "electrical", "flooring", "heatingandcooling",  "Hotfood", "kitchen", "lightingandceilingfans", 
+"lumberandcomposites", "outdoors", "paint", "plumbing", "storageandorganization", "tools");
 
 $defaultclassifyarrayname="$lang{'Build A PC'}";
 $defaultclassifyarray="buildapc";
 
-%categoryarray=(
-                "buildapc" => [
-                    "processors",
-                    "graphicscards",
-                    "motherboards",
-                    "powersupplyunits",
-                    "harddrives",
-                    "casescordsandotherparts"
-                ],
+%categoryarray=("buildapc" => ["processors", 
+                                       "graphicscards",
+                                       "motherboards",
+                                       "powersupplyunits",
+                                       "harddrives",
+                                       "casescordsandotherparts"],
 
-                "computers" =>  [
-                    "desktops",
-                    "laptops",
-                    "notebooks",
-                    "gamingdesktops",
-                    "gaminglaptops"
-                ],
+                "computers" =>  ["desktops", 
+                                "laptops",
+                                "notebooks",
+                                "gamingdesktops",
+                                "gaminglaptops"],
 
-                "gamingconsolesandgames" => [
-                    "xboxone",
-                    "ps4",
-                    "nintendoswitch",
-                    "nintendowii"
-                ],
+                "gamingconsolesandgames" => ["xboxone",
+                                                "xboxgames",
+                                                "ps4",
+                                                "playstationgames",
+                                                "nintendoswitch", 
+                                                "nintendowii",
+                                                "nintendogames"],
 
-                "stereoequipment" => [
-                    "homeaudio",
-                    "surroundsound",
-                    "carstereosystems",
-                    "vinyl"
-                ],
+                "stereoequipment" => ["homeaudio",
+                            "surroundsound", 
+                            "carstereosystems", 
+                            "vinyl"], 
 
-                "computeraccessories" => [
-                    "keyboards",
-                    "mice",
-                    "monitors",
-                    "mousepads",
-                    "dongles"
-                ]
+       "electrical"=> ["batteries", "cableandwireconnectors", 
+                       "circuitbreakers",
+                       "conduitandconduitfittings", 
+                            "dimmersandswitches", "doorbells",
+                            "electricalboxesandcovers",
+                            "electricaloutlesandadapters",
+                            "electricaltools",
+                            "extensioncords",
+                            "generators",
+                            "lightsockets",
+                            "wallplates"
+],
+
+          "flooring" => ["carpet", 
+                            "floormoulding", 
+                            "flooringtools",
+                            "hardwoodflooring",
+                            "rugs",
+                            "tileandstone",
+                            "vinylflooring"],
+
+          "heatingandcooling" => ["airconditioners", 
+                            "airfilters",
+                            "airpurifiers",
+                            "atticventilation",
+                            "fireplaces",
+                            "heaters", 
+                            "humidifiersanddehumidifiers",
+                            "thermostats"],
+
+	  "Hotfood" => ["hotdogs",
+			"corndogs",
+			"softdogs",
+			"bigdogs",
+			"dogs"],
+
+          "kitchen"=> ["kitchenfaucets", "kitchensinks",
+                       "kitchencabinets",
+                       "kitchencountertops",
+                       "kitchenwalltiles"] ,
+
+
+          "lightingandceilingfans" => ["bathroomlighting",
+                                       "ceilingfans",
+                                       "ceilinglights",
+                                       "chandeliersandpendantlighting",
+                                       "kitchenlighting",
+                                       "lampsandlampshades",
+                                       "landscapelighting",
+                                       "lightingbulbs",
+                                       "timers"
+                                    ],
+ 
+          "lumberandcomposites" => ["boards",
+                                    "decking",
+                                    "fencing",
+                                    "paneling",
+                                    "plywoodandsheathing",
+                                    "shimsandwoodshingles",
+                                    "timber"],
+
+          "outdoors" => ["animalandpetcare", "birdcare",
+                         "grills",
+                         "hottubs",
+                         "patiofurniture",
+                         "playsetsandswingsets",
+                         "pools"],
+
+               "paint"  =>  ["caulking", "cleaners", "dropclothsandsheeting", "gluesandtapes", "paintandprimer", "paintbrushesrollersandkits", "paintcleanup", 
+                               "paintsprayers", "patching", "sanding",  
+                               "scrapersbladesandtools", "stainsandsealers", "thinnersandremovers"],
+
+        "plumbing"  => ["augersplungersdrainopeners", "laudrytubsandfaucets", "pipes", "plumbingtools", "pumpsandtanks", "valves", "waterfiltrationandwatersoftners", "waterheaters"],
+ 
+  "storageandorganization"  => ["closetstorage", "foldingtablesandchairs", "garagestorage", "hooksandracks",  "laudrystorage", "movingboxesandsupplies", 
+"officestorage", "shelves", "storagetotesandbaskets"],
+
+        "tools"  => ["airtoolsandcompressors", "drillanddrillbits", "greaseguns", "grindersandpolishers", "handtools", "joinersandplaners", "measuringtools", "nailersandstaplers", "powersawsandsawblades", "pressesandlathes", 
+"rotarytoolsandoscillatingtools", "routersandrouterbits", "sandersandsandpaper",
+"toolbatteriesandchargers", "weldingandcutting"],
+
 );
 
 %defaultcategoryarray=(
-                      "buildapc"               =>   ["processors"],
-                      "computers"              =>   ["desktops"],
-                      "gamingconsolesandgames" =>   ["xboxone"],
-                      "stereoequipment"        =>   ["homeaudio"],
-                      "computeraccessories"    =>   ["keyboards"]
+                       "buildapc" => ["processors"],
+                       "computers" =>  ["desktops"],
+                       "gamingconsolesandgames" => ["xboxone"],
+                       "stereoequipment" => ["homeaudio"],
+                       "electrical"=> ["electricalboxesandcovers"],
+                       "flooring" => ["carpet"],
+                       "heatingandcooling" => ["airfilters"],
+                       "kitchen"=> ["kitchenfaucets"],
+                       "lightingandceilingfans" => ["lightingbulbs"],
+                       "lumberandcomposites" => ["timber"],
+                       "outdoors" => ["patiofurniture"],
+                       "paint"  =>  ["caulking"],
+                       "plumbing"  => ["waterheaters"],
+                       "storageandorganization"  => ["closetstorage"],
+                       "tools"  => ["airtoolsandcompressors"],
+                        
 );
 
-%categoryarrayname=(
-                    "buildapc" => [
-                        "$lang{'Processors'}",
-                        "$lang{'Graphics Cards'}",
-                        "$lang{'Motherboards'}",
-                        "$lang{'Power Supply Units'}",
-                        "$lang{'Hard Drives'}",
-                        "$lang{'Cases Cords & Other Parts'}"
-                    ],
+%categoryarrayname=("buildapc" => ["$lang{'Processors'}", 
+                                       "$lang{'Graphics Cards'}",
+                                       "$lang{'Motherboards'}",
+                                       "$lang{'Power Supply Units'}",
+                                       "$lang{'Hard Drives'}",
+                                       "$lang{'Cases Cords & Other Parts'}"],
 
-                    "computers" =>  [
-                        "$lang{'Desktops'}",
-                        "$lang{'Laptops'}",
-                        "$lang{'Notebooks'}",
-                        "$lang{'Gaming Desktops'}",
-                        "$lang{'Gaming Laptops'}"
-                    ],
+                "computers" =>  ["$lang{'Desktops'}", 
+                                "$lang{'Laptops'}",
+                                "$lang{'Notebooks'}",
+                                "$lang{'Gaming Desktops'}",
+                                "$lang{'Gaming Laptops'}"],
 
-                    "gamingconsolesandgames" => [
-                        "$lang{'Xbox One'}",
-                        "$lang{'PS4'}",
-                        "$lang{'Nintendo Switch'}",
-                        "$lang{'Nintendo Wii'}"],
+                "gamingconsolesandgames" => ["$lang{'Xbox One'}",
+                                                "$lang{'Xbox Games'}", 
+                                                   "$lang{'PS4'}",
+                                                   "$lang{'Playstation Games'}", 
+                                                   "$lang{'Nintendo Switch'}", 
+                                                   "$lang{'Nintendo Wii'}",
+                                                   "$lang{'Nintendo Games'}"],
 
-                    "stereoequipment" => [
-                        "$lang{'Home Audio'}",
-                        "$lang{'Surround Sound'}",
-                        "$lang{'Car Stereo Systems'}",
-                        "$lang{'Vinyl'}"
-                    ],
+                "stereoequipment" => ["$lang{'Home Audio'}",
+                            "$lang{'Surround Sound'}", 
+                            "$lang{'Car Stereo Systems'}", 
+                            "$lang{'Vinyl'}"], 
 
-                    "computeraccessories" => [
-                        "$lang{'Keyboards'}",
-                        "$lang{'Mice'}",
-                        "$lang{'Monitors'}",
-                        "$lang{'Mouse Pads'}",
-                        "$lang{'Dongles'}"
-                    ]
-);
+       "electrical"=> ["$lang{'Batteries'}", "$lang{'Cable & Wire Connectors'}", 
+                       "$lang{'Circuit Breakers'}",
+                       "$lang{'Conduit & Conduit Fittings'}", 
+                            "$lang{'Dimmers & Switches'}", "$lang{'Door Bells'}",
+                            "$lang{'Electrical Boxes & Covers'}",
+                            "$lang{'Electrical Outles & Adapters'}",
+                            "$lang{'Electrical Tools'}",
+                            "$lang{'Extension Cords'}",
+                            "$lang{'Generators'}",
+                            "$lang{'Light Sockets'}",
+                            "$lang{'Wall Plates'}"
+],
 
-%categoryarrayattri=(
-                    "buildapc" => {
-                        "processors"              =>  [],
-                        "graphicscards"           =>  [],
-                        "motherboards"            =>  [],
-                        "powersupplyunits"        =>  [],
-                        "harddrives"              =>  [],
-                        "casescordsandotherparts" =>  []
-                    },
+          "flooring" => ["$lang{'Carpet'}", 
+                            "$lang{'Floor Moulding'}", 
+                            "$lang{'Flooring Tools'}",
+                            "$lang{'Hardwood Flooring'}",
+                            "$lang{'Rugs'}",
+                            "$lang{'Tile & Stone'}",
+                            "$lang{'Vinyl Flooring'}"],
 
-                    "computers" =>  {
-                        "desktops"        =>  [],
-                        "laptops"         =>  [],
-                        "notebooks"       =>  [],
-                        "gamingdesktops"  =>  [],
-                        "gaminglaptops"   =>  []
-                    },
+          "heatingandcooling" => ["$lang{'Air Conditioners'}", 
+                            "$lang{'Air Filters'}",
+                            "$lang{'Air Purifiers'}",
+                            "$lang{'Attic Ventilation'}",
+                            "$lang{'Fireplaces'}",
+                            "$lang{'Heaters'}", 
+                            "$lang{'Humidifiers & Dehumidifiers'}",
+                            "$lang{'Thermostats'}"],
 
-                    "gamingconsolesandgames" => {
-                        "xboxone"           =>  [],
-                        "ps4"               =>  [],
-                        "nintendoswitch"    =>  [],
-                        "nintendowii"       =>  []
-                    },
+	  "Hotfood" => ["$lang{'Hot Dogs'}",
+			"$lang{'Corn Dogs'}",
+			"$lang{'Soft Dogs'}",
+			"$lang{'Big Dogs'}",
+			"$lang{'Just Plain Ol Dogs'}"],
 
-                    "stereoequipment" => {
-                        "homeaudio"           =>  [],
-                        "surroundsound"       =>  [],
-                        "carstereosystems"    =>  [],
-                        "vinyl"               =>  []
-                    },
-
-                  "computeraccessories" => {
-                      "keyboards"     =>   ["price", "features"],
-                      "mice"          =>   ["price", "features"],
-                      "monitors"      =>   ["price", "resolution", "refreshrate"],
-                      "mousepads"     =>   ["price"],
-                      "dongles"       =>   ["price", "type", "supportedplatforms"]
-                  }
-);
+          "kitchen"=> ["$lang{'Kitchen Faucets'}", "$lang{'Kitchen Sinks'}",
+                       "$lang{'Kitchen Cabinets'}",
+                       "$lang{'Kitchen Countertops'}",
+                       "$lang{'Kitchen Wall Tiles'}"] ,
 
 
-%categoryarrayattriname=(
-                          "buildapc" => {
-                              "processors"                =>  [],
-                              "graphicscards"             =>  [],
-                              "motherboards"              =>  [],
-                              "powersupplyunits"          =>  [],
-                              "harddrives"                =>  [],
-                              "casescordsandotherparts"   =>  []
-                          },
+          "lightingandceilingfans" => ["$lang{'Bathroom Lighting'}",
+                                       "$lang{'Ceiling Fans'}",
+                                       "$lang{'Ceiling Lights'}",
+                                       "$lang{'Chandeliers & Pendant Lighting'}",
+                                       "$lang{'Kitchen Lighting'}",
+                                       "$lang{'Lamps & Lamp Shades'}",
+                                       "$lang{'Landscape Lighting'}",
+                                       "$lang{'Lighting Bulbs'}",
+                                       "$lang{'Timers'}"
+                                    ],
+ 
+          "lumberandcomposites" => ["$lang{'Boards'}",
+                                    "$lang{'Decking'}",
+                                    "$lang{'Fencing'}",
+                                    "$lang{'Paneling'}",
+                                    "$lang{'Plywood & Sheathing'}",
+                                    "$lang{'Shims & Wood Shingles'}",
+                                    "$lang{'Timber'}"],
 
-                          "computers" =>  {
-                              "desktops"          =>  [],
-                              "laptops"           =>  [],
-                              "notebooks"         =>  [],
-                              "gamingdesktops"    =>  [],
-                              "gaminglaptops"     =>  []
-                          },
+          "outdoors" => ["$lang{'Animal & Pet Care'}", "$lang{'Bird Care'}",
+                         "$lang{'Grills'}",
+                         "$lang{'Hot Tubs'}",
+                         "$lang{'Patio Furniture'}",
+                         "$lang{'Play Sets & Swing Sets'}",
+                         "$lang{'Pools'}"],
 
-                          "gamingconsolesandgames" => {
-                              "xboxone"           =>  [],
-                              "PS4"               =>  [],
-                              "nintendoswitch"    =>  [],
-                              "nintendowii"       =>  []
-                          },
+               "paint"  =>  ["$lang{'Caulking'}", "$lang{'Cleaners'}", "$lang{'Drop Cloths & Sheeting'}", "$lang{'Glues & Tapes'}", "$lang{'Paint & Primer'}", "$lang{'Paint Brushes, Rollers & Kits'}", "$lang{'Paint Cleanup'}", 
+                               "$lang{'Paint Sprayers'}", "$lang{'Patching'}", "$lang{'Sanding'}",  
+                               "$lang{'Scrapers, Blades & Tools'}", "$lang{'Stains & Sealers'}", "$lang{'Thinners & Removers'}"],
 
-                          "stereoequipment" => {
-                              "homeaudio"           =>  [],
-                              "surroundsound"       =>  [],
-                              "carstereosystems"    =>  [],
-                              "vinyl"               =>  []
-                          },
+        "plumbing"  => ["$lang{'Augers, Plungers, Drain Openers'}", "$lang{'Laudry Tubs & Faucets'}", "$lang{'Pipes'}", "$lang{'Plumbing Tools'}", "$lang{'Pumps & Tanks'}", "$lang{'Valves'}", "$lang{'Water Filtration & Water Softners'}", "$lang{'Water Heaters'}"],
+ 
+  "storageandorganization"  => ["$lang{'Closet Storage'}", "$lang{'Folding Tables & Chairs'}", "$lang{'Garage Storage'}", "$lang{'Hooks & Racks'}",  "$lang{'Laudry Storage'}", "$lang{'Moving Boxes & Supplies'}", 
+"$lang{'Office Storage'}", "$lang{'Shelves'}", "$lang{'Storage Totes & Baskets'}"],
 
-                          "computeraccessories" => {
-                              "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                              "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                              "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
-                              "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
-                              "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
-                          }
+        "tools"  => ["$lang{'Air Tools & Compressors'}", "$lang{'Drill & Drill Bits'}", "$lang{'Grease Guns'}", "$lang{'Grinders & Polishers'}", "$lang{'Hand Tools'}", "$lang{'Joiners & Planers'}", "$lang{'Measuring Tools'}", "$lang{'Nailers & Staplers'}", "$lang{'Power Saws & Saw Blades'}", "$lang{'Presses & Lathes'}", 
+"$lang{'Rotary Tools & Oscillating Tools'}", "$lang{'Routers & Router Bits'}", "$lang{'Sanders & Sand Paper'}",
+"$lang{'Tool Batteries & Chargers'}", "$lang{'Welding & Cutting'}"],
 
 );
 
+%categoryarrayattri=("buildapc" => {"processors" => ["chipset", "numberofcores"],
+                                       "graphicscards" => ["chipset", "memory"],
+                                       "motherboards" => ["chipset", "maximummemory"],
+                                       "powersupplyunits"=>["wattage", "size"],
+                                       "harddrives"=>["memory", "type"],
+                                       "casescordsandotherparts"=>["size", "onsale"]},
 
-@postdurationarray=("$lang{'One Week'}", "$lang{'Two Weeks'}", "$lang{'One Month'}", "$lang{'Two Months'}", "$lang{'Three Months'}" , "$lang{'Six Months'}",
+                "computers" =>  { "desktops"=>["manufacturer", "size"], 
+                                "laptops"=>["manufacturer", "size"],
+                                "notebooks"=>["manufacturer", "size"],
+                                "gamingdesktops"=>["manufacturer", "size", "memory"],
+                                "gaminglaptops"=>["manufacturer", "size", "memory"]},
+
+                "gamingconsolesandgames" => {"xboxone"=>["onsale", "accessory"], 
+                                                "xboxgames"=>["onsale", "gameoftheyear"], 
+                                                   "ps4"=>["onsale", "accessory"], 
+                                                   "playstationgames"=>["onsale", "gameoftheyear"], 
+                                                   "nintendoswitch"=>["onsale", "accessory"], 
+                                                   "nintendowii"=>["onsale", "accessory"],
+                                                   "nintendogames"=>["onsale", "gameoftheyear"]},
+
+                "stereoequipment" => { "homeaudio"=>["onsale", "decibels"],
+                            "surroundsound"=>["dolby", "decibels"], 
+                            "carstereosystems"=>["onsale", "decibels"], 
+                            "vinyl"=>["onsale", "genre"]}, 
+
+       "electrical"=> {"batteries"=>[], "cableandwireconnectors"=>[], 
+                       "circuitbreakers"=>[],
+                       "conduitandconduitfittings"=>[], 
+                            "dimmersandswitches"=>[], "doorbells"=>[],
+                            "electricalboxesandcovers"=>[],
+                            "electricaloutlesandadapters"=>[],
+                            "electricaltools"=>[],
+                            "extensioncords"=>[],
+                            "generators"=>[],
+                            "lightsockets"=>[],
+                            "wallplates"
+=>[]},
+
+          "flooring" => {"carpet"=>[], 
+                            "floormoulding"=>[], 
+                            "flooringtools"=>[],
+                            "hardwoodflooring"=>[],
+                            "rugs"=>[],
+                            "tileandstone"=>[],
+                            "vinylflooring"=>[]},
+
+          "heatingandcooling" => {"airconditioners"=>[], 
+                            "airfilters"=>[],
+                            "airpurifiers"=>[],
+                            "atticventilation"=>[],
+                            "fireplaces"=>[],
+                            "heaters"=>[], 
+                            "humidifiersanddehumidifiers"=>[],
+                            "thermostats"=>[]},
+
+	  "Hotfood" => {"hotdogs" =>["price", "size"],
+			"corndogs"=>[],
+			"softdogs"=>[],
+			"bigdogs"=>[],
+			"dogs"=>[]},
+
+          "kitchen"=> {"kitchenfaucets"=>[], "kitchensinks"=>[],
+                       "kitchencabinets"=>[],
+                       "kitchencountertops"=>[],
+                       "kitchenwalltiles" =>[]},
+
+
+          "lightingandceilingfans" => {"bathroomlighting"=>[],
+                                       "ceilingfans"=>[],
+                                       "ceilinglights"=>[],
+                                       "chandeliersandpendantlighting"=>[],
+                                       "kitchenlighting"=>[],
+                                       "lampsandlampshades"=>[],
+                                       "landscapelighting"=>[],
+                                       "lightingbulbs"=>[],
+                                       "timers" =>[]},
+ 
+          "lumberandcomposites" => {"boards"=>[],
+                                    "decking"=>[],
+                                    "fencing"=>[],
+                                    "paneling"=>[],
+                                    "plywoodandsheathing"=>[],
+                                    "shimsandwoodshingles"=>[],
+                                    "timber"=>[]},
+
+          "outdoors" => {"animalandpetcare"=>[], "birdcare"=>[],
+                         "grills"=>[],
+                         "hottubs"=>[],
+                         "patiofurniture"=>[],
+                         "playsetsandswingsets"=>[],
+                         "pools"=>[]},
+
+               "paint"  =>  {"caulking"=>[], "cleaners"=>[], "dropclothsandsheeting"=>[], "gluesandtapes"=>[], "paintandprimer"=>[], "paintbrushesrollersandkits"=>[], "paintcleanup"=>[], 
+                               "paintsprayers"=>[], "patching"=>[], "sanding"=>[],  
+                               "scrapersbladesandtools"=>[], "stainsandsealers"=>[], "thinnersandremovers"=>[]},
+
+        "plumbing"  => {"augersplungersdrainopeners"=>[], "laudrytubsandfaucets"=>[], "pipes"=>[], "plumbingtools"=>[], "pumpsandtanks"=>[], "valves"=>[], "waterfiltrationandwatersoftners"=>[], "waterheaters"=>[]},
+ 
+  "storageandorganization"  => {"closetstorage"=>[], "foldingtablesandchairs"=>[], "garagestorage"=>[], "hooksandracks"=>[],  "laudrystorage"=>[], "movingboxesandsupplies"=>[], 
+"officestorage"=>[], "shelves"=>[], "storagetotesandbaskets"=>[]},
+
+        "tools"  => {"airtoolsandcompressors"=>[], "drillanddrillbits"=>[], "greaseguns"=>[], "grindersandpolishers"=>[], "handtools"=>[], "joinersandplaners"=>[], "measuringtools"=>[], "nailersandstaplers"=>[], "powersawsandsawblades"=>[], "pressesandlathes"=>[], 
+"rotarytoolsandoscillatingtools"=>[], "routersandrouterbits"=>[], "sandersandsandpaper"=>[],
+"toolbatteriesandchargers"=>[], "weldingandcutting"=>[]},
+
+);
+
+
+%categoryarrayattriname=("buildapc" => {"processors" => ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Number of Cores:'}|8|<br><br>"],
+                                       "graphicscards" => ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Memory:'}|8|<br><br>"],
+                                       "motherboards" => ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Maximum Memory Supported:'}|8|<br><br>"],
+                                       "powersupplyunits"=>["$lang{'Wattage:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                                       "harddrives"=>["$lang{'Memory:'}|8|&nbsp;&nbsp", "$lang{'Type:'}|8|<br><br>"],
+                                       "casescordsandotherparts"=>["$lang{'Size:'}|8|&nbsp;&nbsp", "$lang{'On Sale:'}|8|<br><br>"]},
+
+                "computers" =>  { "desktops"=>["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"], 
+                                "laptops"=>["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                                "notebooks"=>["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                                "gamingdesktops"=>["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>", "$lang{'Memory:'}|8|<br><br>"],
+                                "gaminglaptops"=>["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>", "$lang{'Memory:'}|8|<br><br>"]},
+
+                "gamingconsolesandgames" => {"xboxone"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                                                "xboxgames"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"],  
+                                                   "PS4"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                                                "playstationgames"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"], 
+                                                   "nintendoswitch"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"], 
+                                                   "nintendowii"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                                                   "nintendogames"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"]},
+
+                "stereoequipment" => { "homeaudio"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"],
+                            "surroundsound"=>["$lang{'Dolby:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"], 
+                            "carstereosystems"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"], 
+                            "vinyl"=>["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Genre:'}|8|<br><br>"]}, 
+
+       "electrical"=> {"batteries"=>[], "cableandwireconnectors"=>[], 
+                       "circuitbreakers"=>[],
+                       "conduitandconduitfittings"=>[], 
+                            "dimmersandswitches"=>[], "doorbells"=>[],
+                            "electricalboxesandcovers"=>[],
+                            "electricaloutlesandadapters"=>[],
+                            "electricaltools"=>[],
+                            "extensioncords"=>[],
+                            "generators"=>[],
+                            "lightsockets"=>[],
+                            "wallplates"
+=>[]},
+
+          "flooring" => {"carpet"=>[], 
+                            "floormoulding"=>[], 
+                            "flooringtools"=>[],
+                            "hardwoodflooring"=>[],
+                            "rugs"=>[],
+                            "tileandstone"=>[],
+                            "vinylflooring"=>[]},
+
+          "heatingandcooling" => {"airconditioners"=>[], 
+                            "airfilters"=>[],
+                            "airpurifiers"=>[],
+                            "atticventilation"=>[],
+                            "fireplaces"=>[],
+                            "heaters"=>[], 
+                            "humidifiersanddehumidifiers"=>[],
+                            "thermostats"=>[]},
+
+	  "Hotfood" => {"hotdogs" =>["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+			"corndogs"=>[],
+			"softdogs"=>[],
+			"bigdogs"=>[],
+			"dogs"=>[]},
+
+          "kitchen"=> {"kitchenfaucets"=>[], "kitchensinks"=>[],
+                       "kitchencabinets"=>[],
+                       "kitchencountertops"=>[],
+                       "kitchenwalltiles" =>[]},
+
+
+          "lightingandceilingfans" => {"bathroomlighting"=>[],
+                                       "ceilingfans"=>[],
+                                       "ceilinglights"=>[],
+                                       "chandeliersandpendantlighting"=>[],
+                                       "kitchenlighting"=>[],
+                                       "lampsandlampshades"=>[],
+                                       "landscapelighting"=>[],
+                                       "lightingbulbs"=>[],
+                                       "timers" =>[]},
+ 
+          "lumberandcomposites" => {"boards"=>[],
+                                    "decking"=>[],
+                                    "fencing"=>[],
+                                    "paneling"=>[],
+                                    "plywoodandsheathing"=>[],
+                                    "shimsandwoodshingles"=>[],
+                                    "timber"=>[]},
+
+          "outdoors" => {"animalandpetcare"=>[], "birdcare"=>[],
+                         "grills"=>[],
+                         "hottubs"=>[],
+                         "patiofurniture"=>[],
+                         "playsetsandswingsets"=>[],
+                         "pools"=>[]},
+
+               "paint"  =>  {"caulking"=>[], "cleaners"=>[], "dropclothsandsheeting"=>[], "gluesandtapes"=>[], "paintandprimer"=>[], "paintbrushesrollersandkits"=>[], "paintcleanup"=>[], 
+                               "paintsprayers"=>[], "patching"=>[], "sanding"=>[],  
+                               "scrapersbladesandtools"=>[], "stainsandsealers"=>[], "thinnersandremovers"=>[]},
+
+        "plumbing"  => {"augersplungersdrainopeners"=>[], "laudrytubsandfaucets"=>[], "pipes"=>[], "plumbingtools"=>[], "pumpsandtanks"=>[], "valves"=>[], "waterfiltrationandwatersoftners"=>[], "waterheaters"=>[]},
+ 
+  "storageandorganization"  => {"closetstorage"=>[], "foldingtablesandchairs"=>[], "garagestorage"=>[], "hooksandracks"=>[],  "laudrystorage"=>[], "movingboxesandsupplies"=>[], 
+"officestorage"=>[], "shelves"=>[], "storagetotesandbaskets"=>[]},
+
+        "tools"  => {"airtoolsandcompressors"=>[], "drillanddrillbits"=>[], "greaseguns"=>[], "grindersandpolishers"=>[], "handtools"=>[], "joinersandplaners"=>[], "measuringtools"=>[], "nailersandstaplers"=>[], "powersawsandsawblades"=>[], "pressesandlathes"=>[], 
+"rotarytoolsandoscillatingtools"=>[], "routersandrouterbits"=>[], "sandersandsandpaper"=>[],
+"toolbatteriesandchargers"=>[], "weldingandcutting"=>[]},
+
+);
+
+
+@postdurationarray=("$lang{'One Week'}", "$lang{'Two Weeks'}", "$lang{'One Month'}", "$lang{'Two Months'}", "$lang{'Three Months'}" , "$lang{'Six Months'}",  
                                         "$lang{'One Year'}", "$lang{'Two Years'}", "$lang{'Three Years'}",
                                         "$lang{'Nonexpire'}");
 
 @postdurationday=("7", "14", "0", "0", "0", "0", "0", "0", "0", "0" );
 
-$defaultpostdurationday= ("0");
+$defaultpostdurationday= ("0");                 
 
 
 @postdurationmonth=("0", "0", "1", "2", "3", "6", "0", "0", "0", "0" ),
@@ -415,7 +699,7 @@ $defaultpostdurationday= ("0");
 $defaultpostdurationmonth="0";
 
 @postdurationyear=("0", "0", "0", "0", "0", "0", "1", "2", "3", "20");
-
+                               
 
 $defaultpostdurationyear = "20";
 
@@ -433,7 +717,7 @@ $defaultadprice = ("0.00");
 
 
 @picpricearray=("1.00", "1.00", "1.00", "1.00", "1.00", "1.00", "1.00", "1.00", "1.00", "1.00");
-
+                        
 
 $defaultpicprice= "1.00";
 
