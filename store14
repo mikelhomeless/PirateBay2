@@ -217,15 +217,47 @@ local (*in) = shift if @_;    # CGI input
 
 
 
-@classifyarrayname=("$lang{'Computer Accessories'}");
+@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}",
+"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}");
 
 
-@classifyarray=("computeraccessories");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories");
 
-$defaultclassifyarrayname="$lang{'Computer Accessories'}";
-$defaultclassifyarray="computeraccessories";
+$defaultclassifyarrayname="$lang{'Build A PC'}";
+$defaultclassifyarray="buildapc";
 
 %categoryarray=(
+                "buildapc" => [
+                    "processors",
+                    "graphicscards",
+                    "motherboards",
+                    "powersupplyunits",
+                    "harddrives",
+                    "casescordsandotherparts"
+                ],
+
+                "computers" =>  [
+                    "desktops",
+                    "laptops",
+                    "notebooks",
+                    "gamingdesktops",
+                    "gaminglaptops"
+                ],
+
+                "gamingconsolesandgames" => [
+                    "xboxone",
+                    "ps4",
+                    "nintendoswitch",
+                    "nintendowii"
+                ],
+
+                "stereoequipment" => [
+                    "homeaudio",
+                    "surroundsound",
+                    "carstereosystems",
+                    "vinyl"
+                ],
+
                 "computeraccessories" => [
                     "keyboards",
                     "mice",
@@ -236,40 +268,135 @@ $defaultclassifyarray="computeraccessories";
 );
 
 %defaultcategoryarray=(
-                      "computeraccessories" => ["keyboards"]
+                      "buildapc"               =>   ["processors"],
+                      "computers"              =>   ["desktops"],
+                      "gamingconsolesandgames" =>   ["xboxone"],
+                      "stereoequipment"        =>   ["homeaudio"],
+                      "computeraccessories"    =>   ["keyboards"]
 );
 
 %categoryarrayname=(
+                    "buildapc" => [
+                        "$lang{'Processors'}",
+                        "$lang{'Graphics Cards'}",
+                        "$lang{'Motherboards'}",
+                        "$lang{'Power Supply Units'}",
+                        "$lang{'Hard Drives'}",
+                        "$lang{'Cases Cords & Other Parts'}"
+                    ],
 
-                "computeraccessories" => [
-                    "$lang{'Keyboards'}",
-                    "$lang{'Mice'}",
-                    "$lang{'Monitors'}",
-                    "$lang{'Mouse Pads'}",
-                    "$lang{'Dongles'}"
-                ]
+                    "computers" =>  [
+                        "$lang{'Desktops'}",
+                        "$lang{'Laptops'}",
+                        "$lang{'Notebooks'}",
+                        "$lang{'Gaming Desktops'}",
+                        "$lang{'Gaming Laptops'}"
+                    ],
+
+                    "gamingconsolesandgames" => [
+                        "$lang{'Xbox One'}",
+                        "$lang{'PS4'}",
+                        "$lang{'Nintendo Switch'}",
+                        "$lang{'Nintendo Wii'}"],
+
+                    "stereoequipment" => [
+                        "$lang{'Home Audio'}",
+                        "$lang{'Surround Sound'}",
+                        "$lang{'Car Stereo Systems'}",
+                        "$lang{'Vinyl'}"
+                    ],
+
+                    "computeraccessories" => [
+                        "$lang{'Keyboards'}",
+                        "$lang{'Mice'}",
+                        "$lang{'Monitors'}",
+                        "$lang{'Mouse Pads'}",
+                        "$lang{'Dongles'}"
+                    ]
 );
 
 %categoryarrayattri=(
+                    "buildapc" => {
+                        "processors"              =>  [],
+                        "graphicscards"           =>  [],
+                        "motherboards"            =>  [],
+                        "powersupplyunits"        =>  [],
+                        "harddrives"              =>  [],
+                        "casescordsandotherparts" =>  []
+                    },
 
-              "computeraccessories" => {
-                  "keyboards"     =>   ["price", "features"],
-                  "mice"          =>   ["price", "features"],
-                  "monitors"      =>   ["price", "resolution", "refreshrate"],
-                  "mousepads"     =>   ["price"],
-                  "dongles"       =>   ["price", "type", "supportedplatforms"]
-              }
+                    "computers" =>  {
+                        "desktops"        =>  [],
+                        "laptops"         =>  [],
+                        "notebooks"       =>  [],
+                        "gamingdesktops"  =>  [],
+                        "gaminglaptops"   =>  []
+                    },
+
+                    "gamingconsolesandgames" => {
+                        "xboxone"           =>  [],
+                        "ps4"               =>  [],
+                        "nintendoswitch"    =>  [],
+                        "nintendowii"       =>  []
+                    },
+
+                    "stereoequipment" => {
+                        "homeaudio"           =>  [],
+                        "surroundsound"       =>  [],
+                        "carstereosystems"    =>  [],
+                        "vinyl"               =>  []
+                    },
+
+                  "computeraccessories" => {
+                      "keyboards"     =>   ["price", "features"],
+                      "mice"          =>   ["price", "features"],
+                      "monitors"      =>   ["price", "resolution", "refreshrate"],
+                      "mousepads"     =>   ["price"],
+                      "dongles"       =>   ["price", "type", "supportedplatforms"]
+                  }
 );
 
 
 %categoryarrayattriname=(
-                "computeraccessories" => {
-                    "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                    "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                    "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
-                    "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
-                    "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
-                }
+                          "buildapc" => {
+                              "processors"                =>  [],
+                              "graphicscards"             =>  [],
+                              "motherboards"              =>  [],
+                              "powersupplyunits"          =>  [],
+                              "harddrives"                =>  [],
+                              "casescordsandotherparts"   =>  []
+                          },
+
+                          "computers" =>  {
+                              "desktops"          =>  [],
+                              "laptops"           =>  [],
+                              "notebooks"         =>  [],
+                              "gamingdesktops"    =>  [],
+                              "gaminglaptops"     =>  []
+                          },
+
+                          "gamingconsolesandgames" => {
+                              "xboxone"           =>  [],
+                              "PS4"               =>  [],
+                              "nintendoswitch"    =>  [],
+                              "nintendowii"       =>  []
+                          },
+
+                          "stereoequipment" => {
+                              "homeaudio"           =>  [],
+                              "surroundsound"       =>  [],
+                              "carstereosystems"    =>  [],
+                              "vinyl"               =>  []
+                          },
+
+                          "computeraccessories" => {
+                              "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                              "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                              "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
+                              "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
+                              "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
+                          }
+
 );
 
 
