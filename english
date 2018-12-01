@@ -1130,21 +1130,19 @@ An email has been sent to us. Please wait for response.#An email has been sent t
 
 sub customize {
 $langindexkey=
-"Accessories#Accessories#
-Capacity:#Capacity:#
-Computer Hardware#Computer Hardware#
-CPUs#CPUs#
-Efficiency Rating:#Efficiency Rating:#
-Graphics Cards#Graphics Cards#
-Power Supplies#Power Supplies#
+"Computer Accessories#Computer Accessories#
+Keyboards#Keyboards#
+Mice#Mice#
+Monitors#Monitors#
+Mouse Pads#Mouse Pads#
+Dongles#Dongles#
+Features:#Features:#
+Resolution:#Resolution:#
+Refresh Rate:#Refresh Rate:#
 Price:#Price:#
-RAM#RAM#
 Size:#Size:#
-Socket:#Socket:#
 Supported Platforms:#Supported Platforms:#
-
 Kansas City#Kansas City#
-
 Production Place:#Production Place:#
 Production Date:#Production Date:#
 Expiration Date:#Expiration Date:#
