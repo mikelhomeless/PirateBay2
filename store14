@@ -217,11 +217,11 @@ local (*in) = shift if @_;    # CGI input
 
 
 
-@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Computer Accessories'}", "$lang{'Gaming Consoles & Games'}",
-"$lang{'Stereo Equipment'}");
+@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}",
+"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}");
 
 
-@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories");
 
 $defaultclassifyarrayname="$lang{'Build A PC'}";
 $defaultclassifyarray="buildapc";
@@ -258,13 +258,42 @@ $defaultclassifyarray="buildapc";
 );
 
 %defaultcategoryarray=(
-                "computeraccessories" => [
-                    "$lang{'Keyboards'}",
-                    "$lang{'Mice'}",
-                    "$lang{'Monitors'}",
-                    "$lang{'Mouse Pads'}",
-                    "$lang{'Dongles'}"
-                ]
+                "buildapc" => ["processors"],
+                "computers" => ["desktops"],
+                "gamingconsolesandgames" => ["xboxone"],
+                "stereoequipment" => ["homeaudio"],
+                "computeraccessories" => ["keyboards"]
+);
+
+%categoryarrayname=("buildapc" => ["$lang{'Processors'}",
+                                       "$lang{'Graphics Cards'}",
+                                       "$lang{'Motherboards'}",
+                                       "$lang{'Power Supply Units'}",
+                                       "$lang{'Hard Drives'}",
+                                       "$lang{'Cases Cords & Other Parts'}"],
+
+                "computers" =>  ["$lang{'Desktops'}",
+                                "$lang{'Laptops'}",
+                                "$lang{'Notebooks'}",
+                                "$lang{'Gaming Desktops'}",
+                                "$lang{'Gaming Laptops'}"],
+
+                "gamingconsolesandgames" => ["$lang{'Xbox One'}",
+                                                   "$lang{'PS4'}",
+                                                   "$lang{'Nintendo Switch'}",
+                                                   "$lang{'Nintendo Wii'}"],
+
+                "stereoequipment" => ["$lang{'Home Audio'}",
+                            "$lang{'Surround Sound'}",
+                            "$lang{'Car Stereo Systems'}",
+                            "$lang{'Vinyl'}"],
+                            "computeraccessories" => [
+                                    "$lang{'Keyboards'}",
+                                    "$lang{'Mice'}",
+                                    "$lang{'Monitors'}",
+                                    "$lang{'Mouse Pads'}",
+                                    "$lang{'Dongles'}"
+                                ]
 );
 
 %categoryarrayattri=("buildapc" => {"processors" => [],
@@ -301,7 +330,7 @@ $defaultclassifyarray="buildapc";
 );
 
 
-%categoryarrayattriname=("buildapc" => {"processors" => ["$lang{'Chipset'}|8|&nbsp;&nbsp", "$lang{'Number of Cores:'}|8|<br><br>"],
+%categoryarrayattriname=("buildapc" => {"processors" => [],
                                        "graphicscards" => [],
                                        "motherboards" => [],
                                        "powersupplyunits"=>[],
