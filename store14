@@ -217,58 +217,58 @@ local (*in) = shift if @_;    # CGI input
 
 
 
-@classifyarrayname=("$lang{'Computer Hardware'}");
+@classifyarrayname=("$lang{'Computer Accessories'}");
 
 
-@classifyarray=("computerhardware");
+@classifyarray=("computeraccessories");
 
-$defaultclassifyarrayname="$lang{'Computer Hardware'}";
-$defaultclassifyarray="computerhardware";
+$defaultclassifyarrayname="$lang{'Computer Accessories'}";
+$defaultclassifyarray="computeraccessories";
 
 %categoryarray=(
-                "computerhardware" => [
-                    "accessories",
-                    "cpus",
-                    "graphicscards",
-                    "powersupplies",
-                    "ram"
+                "computeraccessories" => [
+                    "keyboards",
+                    "mice",
+                    "monitors",
+                    "mousepads",
+                    "dongles"
                 ]
 );
 
 %defaultcategoryarray=(
-                      "computerhardware" => ["accessories"]
+                      "computeraccessories" => ["keyboards"]
 );
 
 %categoryarrayname=(
 
-                "computerhardware" => [
-                    "$lang{'Accessories'}",
-                    "$lang{'CPUs'}",
-                    "$lang{'Graphics Cards'}",
-                    "$lang{'Power Supplies'}",
-                    "$lang{'RAM'}"
+                "computeraccessories" => [
+                    "$lang{'Keyboards'}",
+                    "$lang{'Mice'}",
+                    "$lang{'Monitors'}",
+                    "$lang{'Mouse Pads'}",
+                    "$lang{'Dongles'}"
                 ]
 );
 
 %categoryarrayattri=(
 
-              "computerhardware" => {
-                  "accessories"        =>   ["price", "supportedplatforms"],
-                  "cpus"               =>   ["price", "socket"],
-                  "graphicscards"      =>   ["price"],
-                  "powersupplies"      =>   ["price", "efficiencyratting"],
-                  "ram"                =>   ["price", "capacity"]
+              "computeraccessories" => {
+                  "keyboards"     =>   ["price", "features"],
+                  "mice"          =>   ["price", "features"],
+                  "monitors"      =>   ["price", "resolution", "refreshrate"],
+                  "mousepads"     =>   ["price"],
+                  "dongles"       =>   ["price", "type", "supportedplatforms"]
               }
 );
 
 
 %categoryarrayattriname=(
-                "computerhardware" => {
-                    "accessories"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms:'}|8|<br><br>"],
-                    "cpus"              =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Socket:'}|8|<br><br>"],
-                    "graphicscards"     =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
-                    "powersupplies"     =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Efficiency Rating:'}|8|<br><br>"],
-                    "ram"               =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Capacity:'}|8|<br><br>"]
+                "computeraccessories" => {
+                    "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                    "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                    "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
+                    "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
+                    "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
                 }
 );
 
