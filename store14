@@ -217,30 +217,47 @@ local (*in) = shift if @_;    # CGI input
 
 
 
-@classifyarrayname=("$lang{'Computer Accessories'}");
+@classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Computer Accessories'}", "$lang{'Gaming Consoles & Games'}",
+"$lang{'Stereo Equipment'}");
 
 
-@classifyarray=("computeraccessories");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment");
 
-$defaultclassifyarrayname="$lang{'Computer Accessories'}";
-$defaultclassifyarray="computeraccessories";
+$defaultclassifyarrayname="$lang{'Build A PC'}";
+$defaultclassifyarray="buildapc";
 
-%categoryarray=(
+%categoryarray=("buildapc" => ["processors",
+                                       "graphicscards",
+                                       "motherboards",
+                                       "powersupplyunits",
+                                       "harddrives",
+                                       "casescordsandotherparts"],
+
+                "computers" =>  ["desktops",
+                                "laptops",
+                                "notebooks",
+                                "gamingdesktops",
+                                "gaminglaptops"],
+
+                "gamingconsolesandgames" => ["xboxone",
+                                                   "ps4",
+                                                   "nintendoswitch",
+                                                   "nintendowii"],
+
+                "stereoequipment" => ["homeaudio",
+                            "surroundsound",
+                            "carstereosystems",
+                            "vinyl"],
                 "computeraccessories" => [
-                    "keyboards",
-                    "mice",
-                    "monitors",
-                    "mousepads",
-                    "dongles"
-                ]
+                                "keyboards",
+                                "mice",
+                                "monitors",
+                                "mousepads",
+                                "dongles"
+                            ]
 );
 
 %defaultcategoryarray=(
-                      "computeraccessories" => ["keyboards"]
-);
-
-%categoryarrayname=(
-
                 "computeraccessories" => [
                     "$lang{'Keyboards'}",
                     "$lang{'Mice'}",
@@ -250,7 +267,29 @@ $defaultclassifyarray="computeraccessories";
                 ]
 );
 
-%categoryarrayattri=(
+%categoryarrayattri=("buildapc" => {"processors" => [],
+                                       "graphicscards" => [],
+                                       "motherboards" => [],
+                                       "powersupplyunits"=>[],
+                                       "harddrives"=>[],
+                                       "casescordsandotherparts"=>[]},
+
+                "computers" =>  { "desktops"=>[],
+                                "laptops"=>[],
+                                "notebooks"=>[],
+                                "gamingdesktops"=>[],
+                                "gaminglaptops"=>[]},
+
+                "gamingconsolesandgames" => {"xboxone"=>[],
+                                                   "ps4"=>[],
+                                                   "nintendoswitch"=>[],
+                                                   "nintendowii"=>[]},
+
+                "stereoequipment" => { "homeaudio"=>[],
+                            "surroundsound"=>[],
+                            "carstereosystems"=>[],
+                            "vinyl"=>[]},
+
 
               "computeraccessories" => {
                   "keyboards"     =>   ["price", "features"],
@@ -262,14 +301,37 @@ $defaultclassifyarray="computeraccessories";
 );
 
 
-%categoryarrayattriname=(
-                "computeraccessories" => {
-                    "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                    "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
-                    "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
-                    "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
-                    "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
-                }
+%categoryarrayattriname=("buildapc" => {"processors" => ["$lang{'Chipset'}|8|&nbsp;&nbsp", "$lang{'Number of Cores:'}|8|<br><br>"],
+                                       "graphicscards" => [],
+                                       "motherboards" => [],
+                                       "powersupplyunits"=>[],
+                                       "harddrives"=>[],
+                                       "casescordsandotherparts"=>[]},
+
+                "computers" =>  { "desktops"=>[],
+                                "laptops"=>[],
+                                "notebooks"=>[],
+                                "gamingdesktops"=>[],
+                                "gaminglaptops"=>[]},
+
+                "gamingconsolesandgames" => {"xboxone"=>[],
+                                                   "PS4"=>[],
+                                                   "nintendoswitch"=>[],
+                                                   "nintendowii"=>[]},
+
+                "stereoequipment" => { "homeaudio"=>[],
+                            "surroundsound"=>[],
+                            "carstereosystems"=>[],
+                            "vinyl"=>[]},
+
+                            "computeraccessories" => {
+                                "keyboards"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                                "mice"            =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Features:'}|8|<br><br>"],
+                                "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
+                                "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
+                                "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
+                            }
+
 );
 
 
