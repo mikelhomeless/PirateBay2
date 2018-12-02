@@ -218,10 +218,10 @@ local (*in) = shift if @_;    # CGI input
 
 
 @classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}",
-"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}", "$lang{'Networking'}");
+"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}", "$lang{'Networking'}", "$lang{'Electronics'}");
 
 
-@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories", "networking");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories", "networking", "electronics");
 
 $defaultclassifyarrayname="$lang{'Build A PC'}";
 $defaultclassifyarray="buildapc";
@@ -274,6 +274,13 @@ $defaultclassifyarray="buildapc";
                     "networkingcables",
                     "switches",
                     "accesspointsandrepeaters"
+                ],
+
+                "electronics" => [
+                    "smarthome",
+                    "smartplugs",
+                    "streamingdevices",
+                    "tablets"
                 ]
 );
 
@@ -283,7 +290,8 @@ $defaultclassifyarray="buildapc";
                       "gamingconsolesandgames" =>   ["xboxone"],
                       "stereoequipment"        =>   ["homeaudio"],
                       "computeraccessories"    =>   ["keyboards"],
-                      "networking"             =>   ["routers"]
+                      "networking"             =>   ["routers"],
+                      "electronics"            =>   ["smarthome"]
 );
 
 %categoryarrayname=(
@@ -334,6 +342,13 @@ $defaultclassifyarray="buildapc";
                         "$lang{'Networking Cables'}",
                         "$lang{'Switches'}",
                         "$lang{'Access-Points and Repeaters'}"
+                    ],
+
+                    "electronics" => [
+                        "$lang{'Smart Home'}",
+                        "$lang{'Smart Plugs'}",
+                        "$lang{'Streaming Devices'}",
+                        "$lang{'Tablets'}"
                     ]
 );
 
@@ -385,6 +400,13 @@ $defaultclassifyarray="buildapc";
                       "networkingcables"          =>  ["price", "category", "length"],
                       "switches"                  =>  ["price", "numberofports"],
                       "accesspointsandrepeaters"  =>  ["price", "range"]
+                  },
+
+                  "electronics" => {
+                      "smarthome"         =>  ["price", "brand"],
+                      "smartplugs"        =>  ["price", "compatibility"],
+                      "streamingdevices"  =>  ["price"],
+                      "tablets"           =>  ["price", "platform"]
                   }
 );
 
@@ -437,6 +459,13 @@ $defaultclassifyarray="buildapc";
                               "networkingcables"          =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Category:'}|8|&nbsp;&nbsp", "$lang{'Length:'}|8|<br><br>"],
                               "switches"                  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Number of Ports:'}|8|<br><br>"],
                               "accesspointsandrepeaters"  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Range:'}|8|<br><br>"]
+                          },
+
+                          "electronics" => {
+                              "smarthome"         =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Brand:'}|8|<br><br>"],
+                              "smartplugs"        =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Compatibility:'}|8|<br><br>"],
+                              "streamingdevices"  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp"],
+                              "tablets"           =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Platform:'}|8|<br><br>"]
                           }
 
 );
