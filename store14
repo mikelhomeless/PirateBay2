@@ -218,10 +218,10 @@ local (*in) = shift if @_;    # CGI input
 
 
 @classifyarrayname=("$lang{'Build A PC'}", "$lang{'Computers'}", "$lang{'Gaming Consoles & Games'}",
-"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}");
+"$lang{'Stereo Equipment'}", "$lang{'Computer Accessories'}", "$lang{'Networking'}", "$lang{'Electronics'}");
 
 
-@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories");
+@classifyarray=("buildapc", "computers", "gamingconsolesandgames", "stereoequipment", "computeraccessories", "networking", "electronics");
 
 $defaultclassifyarrayname="$lang{'Build A PC'}";
 $defaultclassifyarray="buildapc";
@@ -267,6 +267,20 @@ $defaultclassifyarray="buildapc";
                     "monitors",
                     "mousepads",
                     "dongles"
+                ],
+
+                "networking" => [
+                    "routers",
+                    "networkingcables",
+                    "switches",
+                    "accesspointsandrepeaters"
+                ],
+
+                "electronics" => [
+                    "smarthome",
+                    "smartplugs",
+                    "streamingdevices",
+                    "tablets"
                 ]
 );
 
@@ -275,7 +289,9 @@ $defaultclassifyarray="buildapc";
                       "computers"              =>   ["desktops"],
                       "gamingconsolesandgames" =>   ["xboxone"],
                       "stereoequipment"        =>   ["homeaudio"],
-                      "computeraccessories"    =>   ["keyboards"]
+                      "computeraccessories"    =>   ["keyboards"],
+                      "networking"             =>   ["routers"],
+                      "electronics"            =>   ["smarthome"]
 );
 
 %categoryarrayname=(
@@ -319,6 +335,20 @@ $defaultclassifyarray="buildapc";
                         "$lang{'Monitors'}",
                         "$lang{'Mouse Pads'}",
                         "$lang{'Dongles'}"
+                    ],
+
+                    "networking"  => [
+                        "$lang{'Routers'}",
+                        "$lang{'Networking Cables'}",
+                        "$lang{'Switches'}",
+                        "$lang{'Access-Points and Repeaters'}"
+                    ],
+
+                    "electronics" => [
+                        "$lang{'Smart Home'}",
+                        "$lang{'Smart Plugs'}",
+                        "$lang{'Streaming Devices'}",
+                        "$lang{'Tablets'}"
                     ]
 );
 
@@ -363,6 +393,20 @@ $defaultclassifyarray="buildapc";
                       "monitors"      =>   ["price", "resolution", "refreshrate"],
                       "mousepads"     =>   ["price"],
                       "dongles"       =>   ["price", "type", "supportedplatforms"]
+                  },
+
+                  "networking"  => {
+                      "routers"                   =>  ["price", "band", "speed"],
+                      "networkingcables"          =>  ["price", "category", "length"],
+                      "switches"                  =>  ["price", "numberofports"],
+                      "accesspointsandrepeaters"  =>  ["price", "range"]
+                  },
+
+                  "electronics" => {
+                      "smarthome"         =>  ["price", "brand"],
+                      "smartplugs"        =>  ["price", "compatibility"],
+                      "streamingdevices"  =>  ["price"],
+                      "tablets"           =>  ["price", "platform"]
                   }
 );
 
@@ -408,6 +452,20 @@ $defaultclassifyarray="buildapc";
                               "monitors"        =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Resolution:'}|8|&nbsp;&nbsp", "$lang{'Refresh Rate:'}|8|<br><br>"],
                               "mousepads"       =>   ["$lang{'Price:'}|8|&nbsp;&nbsp"],
                               "dongles"         =>   ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Supported Platforms'}|8|<br><br>"]
+                          },
+
+                          "networking"  => {
+                              "routers"                   =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Band:'}|8|&nbsp;&nbsp", "$lang{'Speed:'}|8|<br><br>"],
+                              "networkingcables"          =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Category:'}|8|&nbsp;&nbsp", "$lang{'Length:'}|8|<br><br>"],
+                              "switches"                  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Number of Ports:'}|8|<br><br>"],
+                              "accesspointsandrepeaters"  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Range:'}|8|<br><br>"]
+                          },
+
+                          "electronics" => {
+                              "smarthome"         =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Brand:'}|8|<br><br>"],
+                              "smartplugs"        =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Compatibility:'}|8|<br><br>"],
+                              "streamingdevices"  =>  ["$lang{'Price:'}|8|&nbsp;&nbsp"],
+                              "tablets"           =>  ["$lang{'Price:'}|8|&nbsp;&nbsp", "$lang{'Platform:'}|8|<br><br>"]
                           }
 
 );
