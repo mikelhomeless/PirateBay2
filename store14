@@ -246,9 +246,12 @@ $defaultclassifyarray="buildapc";
 
                 "gamingconsolesandgames" => [
                     "xboxone",
+                    "xboxgames",
                     "ps4",
+                    "playstationgames",
                     "nintendoswitch",
-                    "nintendowii"
+                    "nintendowii",
+                    "nintendogames"
                 ],
 
                 "stereoequipment" => [
@@ -295,9 +298,13 @@ $defaultclassifyarray="buildapc";
 
                     "gamingconsolesandgames" => [
                         "$lang{'Xbox One'}",
+                        "$lang{'Xbox Games'}",
                         "$lang{'PS4'}",
+                        "$lang{'Playstation Games'}",
                         "$lang{'Nintendo Switch'}",
-                        "$lang{'Nintendo Wii'}"],
+                        "$lang{'Nintendo Wii'}",
+                        "$lang{'Nintendo Games'}"
+                    ],
 
                     "stereoequipment" => [
                         "$lang{'Home Audio'}",
@@ -317,34 +324,37 @@ $defaultclassifyarray="buildapc";
 
 %categoryarrayattri=(
                     "buildapc" => {
-                        "processors"              =>  [],
-                        "graphicscards"           =>  [],
-                        "motherboards"            =>  [],
-                        "powersupplyunits"        =>  [],
-                        "harddrives"              =>  [],
-                        "casescordsandotherparts" =>  []
+                        "processors"              =>  ["chipset", "numberofcores"],
+                        "graphicscards"           =>  ["chipset", "memory"],
+                        "motherboards"            =>  ["chipset", "maximummemory"],
+                        "powersupplyunits"        =>  ["wattage", "size"],
+                        "harddrives"              =>  ["memory", "type"],
+                        "casescordsandotherparts" =>  ["size", "onsale"]
                     },
 
                     "computers" =>  {
-                        "desktops"        =>  [],
-                        "laptops"         =>  [],
-                        "notebooks"       =>  [],
-                        "gamingdesktops"  =>  [],
-                        "gaminglaptops"   =>  []
+                        "desktops"        =>  ["manufacturer", "size"],
+                        "laptops"         =>  ["manufacturer", "size"],
+                        "notebooks"       =>  ["manufacturer", "size"],
+                        "gamingdesktops"  =>  ["manufacturer", "size", "memory"],
+                        "gaminglaptops"   =>  ["manufacturer", "size", "memory"]
                     },
 
                     "gamingconsolesandgames" => {
-                        "xboxone"           =>  [],
-                        "ps4"               =>  [],
-                        "nintendoswitch"    =>  [],
-                        "nintendowii"       =>  []
+                        "xboxone"           =>  ["onsale", "accessory"],
+                        "xboxgames"         =>  ["onsale", "gameoftheyear"],
+                        "ps4"               =>  ["onsale", "accessory"],
+                        "playstationgames"  =>  ["onsale", "gameoftheyear"],
+                        "nintendoswitch"    =>  ["onsale", "accessory"],
+                        "nintendowii"       =>  ["onsale", "accessory"],
+                        "nintendogames"     =>  ["onsale", "gameoftheyear"]
                     },
 
                     "stereoequipment" => {
-                        "homeaudio"           =>  [],
-                        "surroundsound"       =>  [],
-                        "carstereosystems"    =>  [],
-                        "vinyl"               =>  []
+                        "homeaudio"           =>  ["onsale", "decibels"],
+                        "surroundsound"       =>  ["dolby", "decibels"],
+                        "carstereosystems"    =>  ["onsale", "decibels"],
+                        "vinyl"               =>  ["onsale", "genre"]
                     },
 
                   "computeraccessories" => {
@@ -359,34 +369,37 @@ $defaultclassifyarray="buildapc";
 
 %categoryarrayattriname=(
                           "buildapc" => {
-                              "processors"                =>  [],
-                              "graphicscards"             =>  [],
-                              "motherboards"              =>  [],
-                              "powersupplyunits"          =>  [],
-                              "harddrives"                =>  [],
-                              "casescordsandotherparts"   =>  []
+                              "processors"                =>  ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Number of Cores:'}|8|<br><br>"],
+                              "graphicscards"             =>  ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Memory:'}|8|<br><br>"],
+                              "motherboards"              =>  ["$lang{'Chipset:'}|8|&nbsp;&nbsp", "$lang{'Maximum Memory Supported:'}|8|<br><br>"],
+                              "powersupplyunits"          =>  ["$lang{'Wattage:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                              "harddrives"                =>  ["$lang{'Memory:'}|8|&nbsp;&nbsp", "$lang{'Type:'}|8|<br><br>"],
+                              "casescordsandotherparts"   =>  ["$lang{'Size:'}|8|&nbsp;&nbsp", "$lang{'On Sale:'}|8|<br><br>"]
                           },
 
                           "computers" =>  {
-                              "desktops"          =>  [],
-                              "laptops"           =>  [],
-                              "notebooks"         =>  [],
-                              "gamingdesktops"    =>  [],
-                              "gaminglaptops"     =>  []
+                              "desktops"          =>  ["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                              "laptops"           =>  ["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                              "notebooks"         =>  ["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>"],
+                              "gamingdesktops"    =>  ["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>", "$lang{'Memory:'}|8|<br><br>"],
+                              "gaminglaptops"     =>  ["$lang{'Manufacturer:'}|8|&nbsp;&nbsp", "$lang{'Size:'}|8|<br><br>", "$lang{'Memory:'}|8|<br><br>"]
                           },
 
                           "gamingconsolesandgames" => {
-                              "xboxone"           =>  [],
-                              "PS4"               =>  [],
-                              "nintendoswitch"    =>  [],
-                              "nintendowii"       =>  []
+                              "xboxone"           =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                              "xboxgames"         =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"],
+                              "PS4"               =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                              "playstationgames"  =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"],
+                              "nintendoswitch"    =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                              "nintendowii"       =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
+                              "nintendogames"     =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"
                           },
 
                           "stereoequipment" => {
-                              "homeaudio"           =>  [],
-                              "surroundsound"       =>  [],
-                              "carstereosystems"    =>  [],
-                              "vinyl"               =>  []
+                              "homeaudio"           =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"],
+                              "surroundsound"       =>  ["$lang{'Dolby:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"],
+                              "carstereosystems"    =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Decibels:'}|8|<br><br>"],
+                              "vinyl"               =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Genre:'}|8|<br><br>"]
                           },
 
                           "computeraccessories" => {
