@@ -392,7 +392,7 @@ $defaultclassifyarray="buildapc";
                               "playstationgames"  =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"],
                               "nintendoswitch"    =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
                               "nintendowii"       =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Accessory:'}|8|<br><br>"],
-                              "nintendogames"     =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"
+                              "nintendogames"     =>  ["$lang{'On Sale:'}|8|&nbsp;&nbsp", "$lang{'Game Of The Year:'}|8|<br><br>"]
                           },
 
                           "stereoequipment" => {
